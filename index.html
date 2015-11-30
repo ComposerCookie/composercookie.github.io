@@ -1,0 +1,126 @@
+<!doctype html>
+
+<html lang="en">
+    
+<head>
+    <meta charset="utf-8">
+    <title>Orange Dragon Studio</title>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+	<script src="script.js"></script>
+</head>
+
+<body>
+    <div id="Homepage">
+        <div id="Logo">
+            <img id="logo" src="gfx/Logo.png">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="home.html">The Team</a></li>
+                <li><a href="home.html">Projects</a></li>
+                <li><a href="home.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="Team">
+            <div class="header">
+                <h1>Who We Are</h1>
+                <img src = "gfx/AboutUsBanner.png">
+            </div>
+            <div class="personBox" id="jackieProfile">
+                <div class="personLine" id="jackieLine">
+					<img class="profileImage" id="profileLeft" src="gfx/Jackie.png">
+					<ul class="traitList" id="jackieTrait">
+						<li>C#, Java, JS, HTML/CSS, VB</li>
+						<li> OOP, MVC, Pixel-perfect</li>
+						<li> Node, SFML, SDL, Socket</li>
+						<li> Pixel Art, Line Art</li>
+						<li> GIMP, Paint-tool SAI, VS</li>
+					</ul>
+				</div>
+				<img class="nameBanner" id="jackieBanner" src="gfx/JackieBanner.png">
+				
+				<p class="personText"> Hello! I am Jacqueline and I am a 6 years experienced programmer with a passion for game development. While most of my programming experiences had been in OOP, C# and Java, over the past 2 years I have been working with web developments and exploring functional programming. Oh and did I mention, I do my own arts and stuff too? Thank for checking me out.</p>
+            </div>
+            <div class="personBox" id="kevinProfile">
+				<div class="personLine" id="kevinLine">
+					<img class="profileImage" id="profileRight" src="gfx/Kevin.png">
+					<ul class="traitList" id="kevinTrait">
+						<li> Python, JS, HTML/CSS, C++, Go</li>
+						<li> Functional, MVC, Agile, RDBMS</li>
+						<li> Node, Ember, PIXI, Express</li>
+						<li> Open Source Dev, Code-fanatic</li>
+						<li> Docker, Kubernetes, Arch Linux</li>
+					</ul>
+				</div>
+				<img class="nameBanner" id="kevinBanner" src="gfx/KevinBanner.png">
+				
+				<p class="personText"> Hi there! I am Kevin. I am a programmer with over 10 years of experience, most of which has focused on web development. Despite my experience I have a passion for game development, open source, and a number of other related disciplines. My core skillset includes knowledge and administration of Linux, relational database usage, and a smattering of programming langauges ranging from Javascript to C++.</p>
+            </div>
+        </div>
+		
+        <div id="Projects">
+			<div class="prjheader">
+                <h1>Projects</h1>
+                <img src = "gfx/ProjectBanner.png">
+            </div>
+			
+			<div class="projectFilter">
+				Filter by:
+				<input type="checkbox" name="person" value="Jackie">Jackie
+				<input type="checkbox" name="person" value="Kevin">Kevin
+			</div>
+			
+			<div class="projectList">
+				<div class="gallery">
+					<h2>Gallery</h2>
+					<div class="prjImgList">
+						<img id="project1Img" class="prjEndLeft prjImageBox" src="gfx/projectImage1.png">
+						<img id="project2Img" class="prjMidEndLeft prjImageBox" src="gfx/projectImage2.png">
+						<img id="project3Img" class="prjMidLeft prjImageBox" src="gfx/projectImage3.png">
+						<img id="project4Img" class="prjCenter prjImageBox" src="gfx/projectImage4.png">
+						<img id="project5Img" class="prjMidRight prjImageBox" src="gfx/projectImage5.png">
+						<img id="project6Img" class="prjMidEndRight prjImageBox" src="gfx/projectImage6.png">
+						<img id="project7Img" class="prjEndRight prjImageBox" src="gfx/projectImage7.png">
+						
+						<button type="button" class="projectToLeft" onclick="projectToLeft()"></button>
+						<button type="button" class="projectToRight" onclick="projectToRight()"></button>
+					</div>
+				</div>
+				<div class="projectDesBox">
+					<h2 id="projectName">Test Project</h2>
+					<h3 id="projectSub">The biggest test of all time</h3>
+					<h3 id="projectAuthor">The Great Aladeen</h3>
+					<h3 id="projectStatus">Status: <span id="devStatus">Ayyyofff</span></h3>
+					<p id="projectDescription">Bite my shiny metal laptop?</p>
+				</div>
+			</div>
+        </div>
+		
+        <div id="Interested">
+			<h1>Interested?</h1>
+			<img src = "gfx/ContactUsBanner.png">
+			<div class="contactBox">
+				Contact us! <br>
+				Main: hello@ordrstudio.com <br>
+				Jacqueline: jacqueline@ordrstudio.com <br>
+				Kevin: kevin@ordrstudio.com
+			</div>
+        </div>
+		
+		<footer>
+			<p>Designed by Jacqueline Tran<br>
+			Copyrighted, Orange Dragon Studio 2015</p>
+		</footer>
+    </div>
+    
+    <div id="JackiePage">
+    </div>
+    
+    <div id="KevinPage">
+    </div>
+    <!--<script src="js/scripts.js"></script>-->
+</body>
+    
+</html>
