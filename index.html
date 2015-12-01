@@ -7,7 +7,6 @@
     <title>Orange Dragon Studio</title>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css">
-	<script src="script.js"></script>
 </head>
 
 <body>
@@ -76,16 +75,16 @@
 				<div class="gallery">
 					<h2>Gallery</h2>
 					<div class="prjImgList">
-						<img id="project1Img" class="prjEndLeft prjImageBox" src="gfx/projectImage1.png">
-						<img id="project2Img" class="prjMidEndLeft prjImageBox" src="gfx/projectImage2.png">
-						<img id="project3Img" class="prjMidLeft prjImageBox" src="gfx/projectImage3.png">
-						<img id="project4Img" class="prjCenter prjImageBox" src="gfx/projectImage4.png">
-						<img id="project5Img" class="prjMidRight prjImageBox" src="gfx/projectImage5.png">
-						<img id="project6Img" class="prjMidEndRight prjImageBox" src="gfx/projectImage6.png">
-						<img id="project7Img" class="prjEndRight prjImageBox" src="gfx/projectImage7.png">
+						<button id="project1Img" class="prjEndLeft prjImageBox" onclick="projectShifts(true, 1)" onmouseover="projectHover(1)"></button>
+						<button id="project2Img" class="prjMidEndLeft prjImageBox" onclick="projectShifts(true, 2)" onmouseover="projectHover(2)"></button>
+						<button id="project3Img" class="prjMidLeft prjImageBox" onclick="projectShifts(true, 3)" onmouseover="projectHover(3)"></button>
+						<button id="project4Img" class="prjCenter prjImageBox" onclick="" onmouseover="projectHover(4)"></button>
+						<button id="project5Img" class="prjMidRight prjImageBox" onclick="projectShifts(false, 5)" onmouseover="projectHover(5)"></button>
+						<button id="project6Img" class="prjMidEndRight prjImageBox" onclick="projectShifts(false, 6)" onmouseover="projectHover(6)"></button>
+						<button id="project7Img" class="prjEndRight prjImageBox" onclick="projectShifts(false, 7)" onmouseover="projectHover(7)"></button>
 						
-						<button type="button" class="projectToLeft" onclick="projectToLeft()"></button>
-						<button type="button" class="projectToRight" onclick="projectToRight()"></button>
+						<button type="button" class="projectToLeft" onclick="projectShift(true)"></button>
+						<button type="button" class="projectToRight" onclick="projectShift(false)"></button>
 					</div>
 				</div>
 				<div class="projectDesBox">
@@ -122,5 +121,7 @@
     </div>
     <!--<script src="js/scripts.js"></script>-->
 </body>
+
+<script src="script.js"></script>
     
 </html>
