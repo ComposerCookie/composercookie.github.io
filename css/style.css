@@ -6,18 +6,29 @@ body{
 }
 
 #Logo{
-    background-color: #1E1E1F;
+    background-image: url('../gfx/logoBackground.png');
+    /*background-color: #1E1E1F;*/
     height: 540px;
     position: relative;
     width: 100%;
+    text-align: center;
+    
 }
 
 #logo{
-    position: absolute;
-    bottom: 30px;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
+    padding-top: 60px;
+    margin-bottom: -30px;
+}
+
+#Logo h1{
+    color: #F59764;
+    font-size: 42px;
+}
+
+#Logo h2{
+    color: #FFF8AD;
+    font-size: 18px;
+    margin-top: -24px;
 }
 
 nav{
@@ -123,12 +134,15 @@ nav ul li a:hover{
 }
 
 .traitList li{
-    border: 1px solid #0058A6;
+    border-top: 1px solid #1E1E1F;
+    border-bottom: 1px solid #1E1E1F;
     height: 76px;
     width: 180px;
     list-style-type: none;
-    background-color: #0081F2;
-    color: #FFFFFF;
+    color: #1E1E1F;
+    vertical-align: middle;
+    line-height: 40px;
+    padding
 }
 
 .nameBanner{
@@ -152,8 +166,9 @@ nav ul li a:hover{
     
 }
 
-.projectFilter{
-    margin-top: 30px;
+.projectFilter {
+    margin-top: 50px;
+    margin-bottom: 40px;
     width: 65%;
 }
 
@@ -391,6 +406,10 @@ nav ul li a:hover{
 
 #projectSub{
     margin-bottom: 15px;
+}
+
+#projectPlatform{
+    margin-top: 15px;
 }
 
 #devStatus{

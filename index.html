@@ -13,6 +13,8 @@
     <div id="Homepage">
         <div id="Logo">
             <img id="logo" src="gfx/Logo.png">
+			<h1>Orange Dragon Studio</h1>
+			<h2>Because Charmanders are copyrighted :(</h2>
         </div>
         <nav>
             <ul>
@@ -66,22 +68,26 @@
             </div>
 			
 			<div class="projectFilter">
-				Filter by:
-				<input type="checkbox" name="person" value="Jackie">Jackie
-				<input type="checkbox" name="person" value="Kevin">Kevin
+				Filter by: 
+					<input type="radio" value="Both" id="squaredChkBox1" name="check" onchange="filterProject(0)" checked="checked"/>
+				None
+					<input type="radio" value="Jackie" id="squaredChkBox2" name="check" onchange="filterProject(1)"/>
+				Jackie
+					<input type="radio" value="Kevin" id="squaredChkBox3" name="check" onchange="filterProject(2)"/>
+				Kevin
 			</div>
 			
 			<div class="projectList">
 				<div class="gallery">
 					<h2>Gallery</h2>
 					<div class="prjImgList">
-						<button id="project1Img" class="prjEndLeft prjImageBox" onclick="projectShifts(true, 1)" onmouseover="projectHover(1)"></button>
-						<button id="project2Img" class="prjMidEndLeft prjImageBox" onclick="projectShifts(true, 2)" onmouseover="projectHover(2)"></button>
-						<button id="project3Img" class="prjMidLeft prjImageBox" onclick="projectShifts(true, 3)" onmouseover="projectHover(3)"></button>
-						<button id="project4Img" class="prjCenter prjImageBox" onclick="" onmouseover="projectHover(4)"></button>
-						<button id="project5Img" class="prjMidRight prjImageBox" onclick="projectShifts(false, 5)" onmouseover="projectHover(5)"></button>
-						<button id="project6Img" class="prjMidEndRight prjImageBox" onclick="projectShifts(false, 6)" onmouseover="projectHover(6)"></button>
-						<button id="project7Img" class="prjEndRight prjImageBox" onclick="projectShifts(false, 7)" onmouseover="projectHover(7)"></button>
+						<button id="project1Img" class="prjEndLeft prjImageBox" onclick="projectShifts(1)" onmouseover="projectHover(1)"></button>
+						<button id="project2Img" class="prjMidEndLeft prjImageBox" onclick="projectShifts(2)" onmouseover="projectHover(2)"></button>
+						<button id="project3Img" class="prjMidLeft prjImageBox" onclick="projectShifts(3)" onmouseover="projectHover(3)"></button>
+						<button id="project4Img" class="prjCenter prjImageBox" onclick="projectShifts(4)" onmouseover="projectHover(4)"></button>
+						<button id="project5Img" class="prjMidRight prjImageBox" onclick="projectShifts(5)" onmouseover="projectHover(5)"></button>
+						<button id="project6Img" class="prjMidEndRight prjImageBox" onclick="projectShifts(6)" onmouseover="projectHover(6)"></button>
+						<button id="project7Img" class="prjEndRight prjImageBox" onclick="projectShifts(7)" onmouseover="projectHover(7)"></button>
 						
 						<button type="button" class="projectToLeft" onclick="projectShift(true)"></button>
 						<button type="button" class="projectToRight" onclick="projectShift(false)"></button>
@@ -92,6 +98,7 @@
 					<h3 id="projectSub">The biggest test of all time</h3>
 					<h3 id="projectAuthor">The Great Aladeen</h3>
 					<h3 id="projectStatus">Status: <span id="devStatus">Ayyyofff</span></h3>
+					<h3 id="projectPlatform">Platforms: </h3>
 					<p id="projectDescription">Bite my shiny metal laptop?</p>
 				</div>
 			</div>
