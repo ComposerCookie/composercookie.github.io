@@ -447,15 +447,15 @@ nav ul li a:hover{
 
 #drawing2{
     position: absolute;
-    top: 1200px;
-    right: 0px;
+    top: 600px;
+    right: 100px;
     z-index: -1;
 }
 
 #drawing3{
     position: absolute;
-    top: 1200px;
-    left: 0px;
+    top: 2150px;
+    right: 0px;
     z-index: -1;
 }
 
