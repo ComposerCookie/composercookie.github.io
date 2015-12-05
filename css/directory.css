@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+}
+
+nav {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 280px;
+    height: 100%;
+    background-color: #242424;
+    font-size: 15pt;
+}
+
+nav ul{
+    list-style-type: none;
+    padding-left: 40px;
+    list-style: none;
+    margin-top: 0px;
+}
+
+nav ul li{
+    margin-top: 8px;
+    margin-bottom: 7px;
+    color: gray;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: gray;
+}
+
+nav ul li a:hover{
+    background-color: lightgray;
+    
+}
+
+nav ul hr{
+    width: 85%;
+    margin-left: 0px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+nav ul ul li{
+    
+}
+
+nav ul ul hr{
+    width: 80%;
+}

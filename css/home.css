@@ -42,7 +42,6 @@ nav{
     text-align: center;
     position: relative;
     top: -24px;
-    min-width: 777px;
 }
 
 nav ul{
@@ -52,7 +51,6 @@ nav ul{
     padding-left:0;
     width: 90%;
     height: 59px;
-    min-width: 817px;
 }
 
 nav ul li{
@@ -471,10 +469,4 @@ footer{
 
 footer p{
     color: #FFFFFF;
-}
-
-@media (max-width: 1366px) {    
-   .projectList {
-       height: 800px;
-   }
 }
