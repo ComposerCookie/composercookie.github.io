@@ -247,7 +247,7 @@ function updateProjectText(proj){
 	getStatusWithID(proj.status);
 	currentProjectPlat.innerHTML = "Platform: " + proj.plat;
 	currentProjectDes.innerHTML = proj.des;
-	currentProjectLink.href = "directory/#" + proj.link;
+	currentProjectLink.href = "directory.html#" + proj.link;
 }
 
 function getAuthorString(authors){
