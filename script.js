@@ -35,14 +35,14 @@ function project(name, sub, author, status, plat, des, link, img){
 }
 
 var projectList = [
-	new project("Smite Team Manager", "A MOBA team management software", [0], 0, "Window, C#, Lidgren, SFML", "Want to manage your smite team professionally? Ever wanted a digital whiteboard that you can draw and let your team mate see from diferent part of the world? This software allow you to connect into your own private chat (hosted by you), private whiteboard for scribble and click/drag gods to position them strategically.", "smiter.html", "gfx/smiteTeemo.png"),
-	new project("Flashcard Quiz", "Create printable flashcard and quizzes", [0], 0, "Window, C#", "Remember when SAT was cool? Yeah... me neither, which is why I spent my time making SAT prep software instead of actually studying SAT (I still got almost perfect on math though). Introducing, the Word List Flashcard (sorry no better name). Input your flashcard, export to PDF and mass print them, or take multiple choice tests and fill in the blank.", "flashcard.html", "gfx/adobeCard.png"),
-	new project("Jackie's RPG Maker", "RPG Maker clone", [0], 0, "Window, C#, SFML, Dock Panel", "Every little kid have a dream, whether it's to become Kung Fury's Hackerman, or to be the next Final Fantasy creator. This was my attempt at creating RPG Maker clone. Come with a map editor, character, event system, animations and actually play test your game. ", "rpgmaker.html", "gfx/rpgmerker.png"),
-	new project("Wandering Soul", "2d Sandbox game", [0], 0, "Window, C#, SFML", "Arguably one of the most interesting project I ever did. Map generator algorithm, AI, dynamic building thank to polymorphism, combats, autotile, etc. While the game itself is not finished, a lot of the foundation/feature was setted up, allow whoever that want to develop this to easily create new contents. What's the game about? Honestly, I have no idea. All I wanted was to make a 2d-top view Minecraft with terraria combat... and ehm,Haven and Hearth clone.", "wandering.html", "gfx/wurnderingsul.png"),
-	new project("NChatN", "Improved Chat for NEaB", [1], 1, "", "Kevin get to work you lazy bum", "nchatn.html", "gfx/nbnchatn.png"),
-	new project("Plushie Bot", "Chat bot for NEaB", [1], 1, "", "Kevin get to work you lazy bum", "plushiebot.html", "gfx/pleshiebut.png"),
-	new project("Hacker News Feeds", "Get Hacker News feeds", [1], 3, "", "Kevin get to work you lazy bum", "hkerNews.html", "gfx/heckerNfoods.png"),
-	new project("Wayward Sails", "2d MMORPG", [0, 1], 2, "Web, Python (b-end), JS/CSS/PIXI(f-end)", "What do you want in a MMO? Are you searching for Runescape grinding, NEaB community, Puzzle Pirates style sailing, Haven and Hearth building/destroy things/deed, and tons of event? We got them. Well.. we will get them, we don't have them yet. We do have a lot of awesome graphic though. Did you see that running animation or the drawing? Check back on this in a year and see some update, okay?", "wayward.html", "gfx/waywardsoul.png")	
+	new project("Smite Team Manager", "A MOBA team management software", [0], 0, "Window, C#, Lidgren, SFML", "Want to manage your smite team professionally? Ever wanted a digital whiteboard that you can draw and let your team mate see from diferent part of the world? This software allow you to connect into your own private chat (hosted by you), private whiteboard for scribble and click/drag gods to position them strategically.", "smiteTeemo", "gfx/smiteTeemo.png"),
+	new project("Flashcard Quiz", "Create printable flashcard and quizzes", [0], 0, "Window, C#", "Remember when SAT was cool? Yeah... me neither, which is why I spent my time making SAT prep software instead of actually studying SAT (I still got almost perfect on math though). Introducing, the Word List Flashcard (sorry no better name). Input your flashcard, export to PDF and mass print them, or take multiple choice tests and fill in the blank.", "Adobecard", "gfx/adobeCard.png"),
+	new project("Jackie's RPG Maker", "RPG Maker clone", [0], 0, "Window, C#, SFML, Dock Panel", "Every little kid have a dream, whether it's to become Kung Fury's Hackerman, or to be the next Final Fantasy creator. This was my attempt at creating RPG Maker clone. Come with a map editor, character, event system, animations and actually play test your game. ", "rpgmerker", "gfx/rpgmerker.png"),
+	new project("Wandering Soul", "2d Sandbox game", [0], 0, "Window, C#, SFML", "Arguably one of the most interesting project I ever did. Map generator algorithm, AI, dynamic building thank to polymorphism, combats, autotile, etc. While the game itself is not finished, a lot of the foundation/feature was setted up, allow whoever that want to develop this to easily create new contents. What's the game about? Honestly, I have no idea. All I wanted was to make a 2d-top view Minecraft with terraria combat... and ehm,Haven and Hearth clone.", "WernderingSturm", "gfx/wurnderingsul.png"),
+	new project("NChatN", "Improved Chat for NEaB", [1], 1, "", "Kevin get to work you lazy bum", "NChatN", "gfx/nbnchatn.png"),
+	new project("Plushie Bot", "Chat bot for NEaB", [1], 1, "", "Kevin get to work you lazy bum", "PlushieBot", "gfx/pleshiebut.png"),
+	new project("Hacker News Feeds", "Get Hacker News feeds", [1], 3, "", "Kevin get to work you lazy bum", "HackerNewsFeed", "gfx/heckerNfoods.png"),
+	new project("Wayward Sails", "2d MMORPG", [0, 1], 2, "Web, Python (b-end), JS/CSS/PIXI(f-end)", "What do you want in a MMO? Are you searching for Runescape grinding, NEaB community, Puzzle Pirates style sailing, Haven and Hearth building/destroy things/deed, and tons of event? We got them. Well.. we will get them, we don't have them yet. We do have a lot of awesome graphic though. Did you see that running animation or the drawing? Check back on this in a year and see some update, okay?", "WaywardSail", "gfx/waywardsoul.png")	
 ];
 
 var filteredProjectList = projectList;
@@ -76,6 +76,7 @@ var currentProjectAuthor = document.getElementById('projectAuthor');
 var currentProjectStatus = document.getElementById('devStatus');
 var currentProjectPlat = document.getElementById('projectPlatform');
 var currentProjectDes = document.getElementById('projectDescription');
+var currentProjectLink = document.getElementById('projectLink');
 
 restartImagesList();
 
@@ -246,6 +247,7 @@ function updateProjectText(proj){
 	getStatusWithID(proj.status);
 	currentProjectPlat.innerHTML = "Platform: " + proj.plat;
 	currentProjectDes.innerHTML = proj.des;
+	currentProjectLink.href = "directory/#" + proj.link;
 }
 
 function getAuthorString(authors){
