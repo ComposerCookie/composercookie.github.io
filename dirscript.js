@@ -20,17 +20,19 @@ var plushieLink = document.getElementById("plushieLink");
 var HKnewsLink = document.getElementById("hknewsLink");
 var waywardLink = document.getElementById("waywerdLink");
 
+var jackieImg = document.getElementById("jackieMainPic");
+
 function hideEverything(){
-	jackieSection.style.visibility = "hidden";
-	kevinSection.style.visibility = "hidden";
-	rpgmSection.style.visibility = "hidden";
-	smiterSection.style.visibility = "hidden";
-	wanderSection.style.visibility = "hidden";
-	flashcardSection.style.visibility = "hidden";
-	nChatnSection.style.visibility = "hidden";
-	plushieSection.style.visibility = "hidden";
-	HKnewsSection.style.visibility = "hidden";
-	waywardSection.style.visibility = "hidden";
+	jackieSection.style.display = "none";
+	kevinSection.style.display = "none";
+	rpgmSection.style.display = "none";
+	smiterSection.style.display = "none";
+	wanderSection.style.display = "none";
+	flashcardSection.style.display = "none";
+	nChatnSection.style.display = "none";
+	plushieSection.style.display = "none";
+	HKnewsSection.style.display = "none";
+	waywardSection.style.display = "none";
 	
 	jackieLink.style.backgroundColor = "transparent";
 	kevinLink.style.backgroundColor = "transparent";
@@ -46,7 +48,7 @@ function hideEverything(){
 
 function showStuff(which, highlight){
 	hideEverything();
-	document.getElementById(which).style.visibility = "visible";
+	document.getElementById(which).style.display = "block";
 	document.getElementById(highlight).style.backgroundColor = "white";
 }
 
@@ -56,7 +58,7 @@ window.addEventListener('load', function() {
         showStuff("jackie", "jackieLink");
     } else if (window.location.href.indexOf('#kevin') > -1) {
         showStuff("kevin", "kevinLink");
-    } else if (window.location.href.indexOf('#rpgmaker') > -1) {
+    } else if (window.location.href.indexOf('#rpgmerker') > -1) {
         showStuff("rpgmerker", "rpgmLink");
     } else if (window.location.href.indexOf('#smiteTeemo') > -1) {
         showStuff("smiteTeemo", "smiteLink");
@@ -77,3 +79,17 @@ window.addEventListener('load', function() {
     }
 	
 });
+
+function changeJackieImg(value){
+	switch(value){
+		case 0:
+			jackieImg.src = "gfx/Jackie.png";
+		break;
+		case 1:
+			jackieImg.src = "gfx/jackie1.png";
+		break;
+		case 2:
+			jackieImg.src = "gfx/jackie2.png";
+		break;
+	}
+};

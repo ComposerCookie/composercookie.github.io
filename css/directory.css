@@ -1,22 +1,22 @@
-html{
+body{
+    margin: 0;
+    position: relative;
     height: 100%;
     font-family: 'Open Sans';
     font-style: normal;
-    font-weight: 300;
-}
-
-body{
-    margin: 0;
 }
 
 nav {
     padding-top: 20px;
     padding-bottom: 20px;
     width: 280px;
-    height: 100vh;
     background-color: #242424;
     font-size: 15pt;
     display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
 }
 
 nav ul{
@@ -58,10 +58,13 @@ nav ul ul hr{
 }
 
 .contentBox{
-    left: 300px;
-    position: absolute;
+    margin-left: 300px;
     display: inline-block;
-    
+}
+
+.contentBox h1{
+    margin-top: 0px;
+    padding-top: 40px;
 }
 
 .leftBox{
@@ -86,17 +89,19 @@ nav ul ul hr{
 }
 
 .rightBox img{
+    margin-top: 30px;
     width: 85%;
 }
 
 .jackiePicLists{
     text-align: right;
-    margin-top: -64px;
+    margin-top: -70px;
     margin-right: 24px;
 }
 
 .jackiePicLists img{
     width: 48px;
+    border: 1px solid transparent;
 }
 
 .jackiePicLists img:hover{
@@ -107,7 +112,6 @@ nav ul ul hr{
 #jackieSmall1:hover #jackieMain{
     
 }
-
 .imageLists{
     display: inline;
 }
@@ -146,43 +150,43 @@ nav ul ul hr{
 }
 
 #jackie{
-    visibility: visible;
+    
 }
 
 #kevin{
-    visibility: hidden;
+    display: none;
 }
 
 #rpgmerker{
-    visibility: hidden;
+    display: none;
 }
 
 #smiteTeemo{
-    visibility: hidden;
+    display: none;
 }
 
 #WernderingSturm{
-    visibility: hidden;
+    display: none;
 }
 
 #Adobecard{
-    visibility: hidden;
+    display: none;
 }
 
 #NChatN{
-    visibility: hidden;
+    display: none;
 }
 
 #PlushieBot{
-    visibility: hidden;
+    display: none;
 }
 
 #HackerNewsFeed{
-    visibility: hidden;
+    display: none;
 }
 
 #WaywardSail{
-    visibility: hidden;
+    display: none;
 }
 
 @media (max-height: 640px) {    
