@@ -3,6 +3,8 @@ body{
     font-weight: 300;
     margin: 0;
     background-color: #FFFFFF;
+    opacity: 1;
+    transition: opacity .500s ease-in-out;
 }
 
 #Logo{

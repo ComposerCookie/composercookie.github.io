@@ -278,3 +278,11 @@ function getStatusWithID(id){
 			break;
 	}
 }
+
+window.addEventListener('DOMContentLoaded', function() {
+	document.body.style.opacity = 0;
+});
+
+window.addEventListener('load', function() {
+	setTimeout(function () { document.body.style.opacity = 1; }, 1000);
+});

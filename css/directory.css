@@ -60,6 +60,8 @@ nav ul ul hr{
 .contentBox{
     margin-left: 300px;
     display: inline-block;
+    opacity: 1;
+    transition: opacity .500s ease-in-out;
 }
 
 .contentBox h1{
@@ -150,7 +152,7 @@ nav ul ul hr{
 }
 
 #jackie{
-    
+    display: none;
 }
 
 #kevin{

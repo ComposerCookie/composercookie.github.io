@@ -23,6 +23,17 @@ var waywardLink = document.getElementById("waywerdLink");
 var jackieImg = document.getElementById("jackieMainPic");
 
 function hideEverything(){
+	jackieSection.style.opacity = 0;
+	kevinSection.style.opacity = 0;
+	rpgmSection.style.opacity = 0;
+	smiterSection.style.opacity = 0;
+	wanderSection.style.opacity = 0;
+	flashcardSection.style.opacity = 0;
+	nChatnSection.style.opacity = 0;
+	plushieSection.style.opacity = 0;
+	HKnewsSection.style.opacity = 0;
+	waywardSection.style.opacity = 0;
+	
 	jackieSection.style.display = "none";
 	kevinSection.style.display = "none";
 	rpgmSection.style.display = "none";
@@ -50,6 +61,8 @@ function showStuff(which, highlight){
 	hideEverything();
 	document.getElementById(which).style.display = "block";
 	document.getElementById(highlight).style.backgroundColor = "white";
+	
+	setTimeout(function () { document.getElementById(which).style.opacity = 1; }, 10);
 }
 
 
