@@ -73,12 +73,9 @@ nav ul ul hr{
     display: inline-block;
     float: right;
     width: 20%;
-    margin-top: 60px;
+    margin-top: 80px;
     margin-right: 5px;
-    padding-top: 20px;
-    padding-bottom: 50px;
-    background-color: #DBDBDB;
-    text-align: center;
+    background-color: #DBDBDB;   
 }
 
 .rightBox p{
@@ -87,25 +84,6 @@ nav ul ul hr{
 
 .rightBox img{
     width: 85%;
-}
-
-.jackiePicLists{
-    text-align: right;
-    margin-top: -64px;
-    margin-right: 24px;
-}
-
-.jackiePicLists img{
-    width: 48px;
-}
-
-.jackiePicLists img:hover{
-    border: 1px solid;
-    border-color: red;
-}
-
-#jackieSmall1:hover #jackieMain{
-    
 }
 
 .imageLists{

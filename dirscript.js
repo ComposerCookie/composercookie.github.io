@@ -32,22 +32,22 @@ function hideEverything(){
 	HKnewsSection.style.visibility = "hidden";
 	waywardSection.style.visibility = "hidden";
 	
-	jackieLink.style.backgroundColor = "none";
-	kevinLink.style.backgroundColor = "none";
-	rpgmLink.style.backgroundColor = "none";
-	smiterLink.style.backgroundColor = "none";
-	wanderLink.style.backgroundColor = "none";
-	flashcardLink.style.backgroundColor = "none";
-	nChatnLink.style.backgroundColor = "none";
-	plushieLink.style.backgroundColor = "none";
-	HKnewsLink.style.backgroundColor = "none";
-	waywardLink.style.backgroundColor = "none";
+	jackieLink.style.backgroundColor = "transparent";
+	kevinLink.style.backgroundColor = "transparent";
+	rpgmLink.style.backgroundColor = "transparent";
+	smiterLink.style.backgroundColor = "transparent";
+	wanderLink.style.backgroundColor = "transparent";
+	flashcardLink.style.backgroundColor = "transparent";
+	nChatnLink.style.backgroundColor = "transparent";
+	plushieLink.style.backgroundColor = "transparent";
+	HKnewsLink.style.backgroundColor = "transparent";
+	waywardLink.style.backgroundColor = "transparent";
 }
 
 function showStuff(which, highlight){
 	hideEverything();
 	document.getElementById(which).style.visibility = "visible";
-	document.getElementById(highlight).style.backgroundColor = "lightyellow";
+	document.getElementById(highlight).style.backgroundColor = "white";
 }
 
 

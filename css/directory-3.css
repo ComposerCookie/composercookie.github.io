@@ -1,8 +1,5 @@
 html{
     height: 100%;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 300;
 }
 
 body{
@@ -73,47 +70,13 @@ nav ul ul hr{
     display: inline-block;
     float: right;
     width: 20%;
-    margin-top: 60px;
-    margin-right: 5px;
     padding-top: 20px;
-    padding-bottom: 50px;
-    background-color: #DBDBDB;
-    text-align: center;
-}
-
-.rightBox p{
-    margin: 5px;
-}
-
-.rightBox img{
-    width: 85%;
-}
-
-.jackiePicLists{
-    text-align: right;
-    margin-top: -64px;
-    margin-right: 24px;
-}
-
-.jackiePicLists img{
-    width: 48px;
-}
-
-.jackiePicLists img:hover{
-    border: 1px solid;
-    border-color: red;
-}
-
-#jackieSmall1:hover #jackieMain{
-    
+    padding-right: 20px;
+    background-color: "lightblue";
 }
 
 .imageLists{
     display: inline;
-}
-
-.imageLists a{
-    text-decoration: none;
 }
 
 .imageLists img{
@@ -121,6 +84,9 @@ nav ul ul hr{
     max-height: 180px;
 }
 
+.rightBox img{
+    width: 100%;
+}
 
 .lightbox {
 	display: none;
@@ -185,8 +151,8 @@ nav ul ul hr{
     visibility: hidden;
 }
 
-@media (max-height: 640px) {    
+@media (max-height: 1000px) {    
    nav {
-       min-height: 1300px;
+       min-height: 1000px;
    }
 }
