@@ -87,6 +87,10 @@ window.addEventListener('load', function() {
         showStuff("HackerNewsFeed", "hknewsLink");
     } else if (window.location.href.indexOf('#WaywardSail') > -1) {
         showStuff("WaywardSail", "waywerdLink");
+	} else if (window.location.href.indexOf('#WaywardSail') > -1) {
+        showStuff("WaywardSail", "waywerdLink");
+	} else if (window.location.href.indexOf('#WaywardSail') > -1) {
+        showStuff("WaywardSail", "waywerdLink");
     } else {
 		showStuff("jackie", "jackieLink");
     }
