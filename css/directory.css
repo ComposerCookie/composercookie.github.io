@@ -157,6 +157,7 @@ nav ul ul hr{
 
 #kevin{
     display: none;
+	height: 900px;
 }
 
 #rpgmerker{
@@ -189,6 +190,7 @@ nav ul ul hr{
 
 #WaywardSail{
     display: none;
+	height: 900px;
 }
 
 @media (max-height: 640px) {    
