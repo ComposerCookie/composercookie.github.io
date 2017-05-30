@@ -5,138 +5,88 @@
 <head>
     <meta charset="utf-8">
     <title>Orange Dragon Studio</title>
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto:300" rel="stylesheet">
     <link rel="stylesheet" href="css/home.css">
 </head>
 
 <body>
-    <div id="Homepage">
-        <div id="Logo">
-            <img id="logo" src="gfx/Logo.png">
-			<h1>Orange Dragon Studio</h1>
-			<h2>Because Charmanders are copyrighted :(</h2>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#team">The Team</a></li>
-                <li><a href="#project">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-		<a name="team"></a>
-        <div id="Team">
-            <div class="header">
-                <h1>Who We Are</h1>
-                <img src = "gfx/AboutUsBanner.png">
-            </div>
-            <div class="personBox" id="jackieProfile">
-                <div class="personLine" id="jackieLine">
-					<a href='directory.html#jackie'><img class="profileImage" id="profileLeft" src="gfx/Jackie.png"></a>
-					<ul class="traitList" id="jackieTrait">
-						<li>C#, Java, JS, HTML/CSS, VB</li>
-						<li> OOP, MVC, Pixel-perfect</li>
-						<li> Node, SFML, SDL, Socket</li>
-						<li> Pixel Art, Line Art</li>
-						<li> GIMP, Paint-tool SAI, VS</li>
-					</ul>
-				</div>
-				<a href='directory.html#jackie'><img class="nameBanner" id="jackieBanner" src="gfx/JackieBanner.png"></a>
-				
-				<p class="personText"> Hello! I am Jacqueline and I am a 6 years experienced programmer with a passion for game development. While most of my programming experiences had been in OOP, C# and Java, over the past 2 years I have been working with web developments and exploring functional programming. Oh and did I mention, I do my own arts and stuff too? Thank for checking me out.</p>
-            </div>
-            <div class="personBox" id="kevinProfile">
-				<div class="personLine" id="kevinLine">
-					<a href='directory.html#kevin'><img class="profileImage" id="profileRight" src="gfx/Kevin.png"></a>
-					<ul class="traitList" id="kevinTrait">
-						<li> Python, JS, HTML/CSS, C++, Go</li>
-						<li> Functional, MVC, Agile, RDBMS</li>
-						<li> Node, Ember, PIXI, Express</li>
-						<li> Open Source Dev, Code-fanatic</li>
-						<li> Docker, Kubernetes, Arch Linux</li>
-					</ul>
-				</div>
-				<a href='directory.html#kevin'><img class="nameBanner" id="kevinBanner" src="gfx/KevinBanner.png"></a>
-				
-				<p class="personText"> Hi there! I am Kevin. I am a programmer with over 10 years of experience, most of which has focused on web development. Despite my experience I have a passion for game development, open source, and a number of other related disciplines. My core skillset includes knowledge and administration of Linux, relational database usage, and a smattering of programming langauges ranging from Javascript to C++.</p>
-            </div>
-        </div>
-		
-		<a name="project"></a>
-        <div id="Projects">
-			<div class="prjheader">
-                <h1>Projects</h1>
-                <img src = "gfx/ProjectBanner.png">
-            </div>
-			
-			<div class="projectFilter">
-				Filter by: 
-					<input type="radio" value="Both" id="squaredChkBox1" name="check" onchange="filterProject(0)" checked="checked"/>
-				None
-					<input type="radio" value="Jackie" id="squaredChkBox2" name="check" onchange="filterProject(1)"/>
-				Jackie
-					<input type="radio" value="Kevin" id="squaredChkBox3" name="check" onchange="filterProject(2)"/>
-				Kevin
-			</div>
-			
-			<div class="projectList">
-				<div class="gallery">
-					<h2>Gallery</h2>
-					<div class="prjImgList">
-						<button id="project1Img" class="prjEndLeft prjImageBox" onclick="projectShifts(1)" onmouseover="projectHover(1)"></button>
-						<button id="project2Img" class="prjMidEndLeft prjImageBox" onclick="projectShifts(2)" onmouseover="projectHover(2)"></button>
-						<button id="project3Img" class="prjMidLeft prjImageBox" onclick="projectShifts(3)" onmouseover="projectHover(3)"></button>
-						<button id="project4Img" class="prjCenter prjImageBox" onclick="projectShifts(4)" onmouseover="projectHover(4)"></button>
-						<button id="project5Img" class="prjMidRight prjImageBox" onclick="projectShifts(5)" onmouseover="projectHover(5)"></button>
-						<button id="project6Img" class="prjMidEndRight prjImageBox" onclick="projectShifts(6)" onmouseover="projectHover(6)"></button>
-						<button id="project7Img" class="prjEndRight prjImageBox" onclick="projectShifts(7)" onmouseover="projectHover(7)"></button>
-						
-						<button type="button" class="projectToLeft" onclick="projectShift(true)"></button>
-						<button type="button" class="projectToRight" onclick="projectShift(false)"></button>
-					</div>
-				</div>
-				<div class="projectDesBox">
-					<h2 id="projectName">Test Project</h2>
-					<h3 id="projectSub">The biggest test of all time</h3>
-					<h3 id="projectAuthor">The Great Aladeen</h3>
-					<h3 id="projectStatus">Status: <span id="devStatus">Ayyyofff</span></h3>
-					<h3 id="projectPlatform">Platforms: </h3>
-					<p id="projectDescription">Bite my shiny metal laptop?</p>
-					<a id="projectLink" href="#">Read more...</a>
-				</div>
-			</div>
-        </div>
-		
-		<a name="contact">
-        <div id="Interested">
-			<h1>Interested?</h1>
-			<img src = "gfx/ContactUsBanner.png">
-			<div class="contactBox">
-				Contact us! <br>
-				Main: <a href="mailto:hello@ordrstudio.com">hello@ordrstudio.com</a> <br>
-				Jacqueline: <a href="mailto:jacqueline@ordrstudio.com">jacqueline@ordrstudio.com</a> <br>
-				Kevin: <a href="mailto:kevin@ordrstudio.com">kevin@ordrstudio.com</a>
-			</div>
-        </div>
-		
-		<div id="Drawings">
-			<img id="drawing1" src="gfx/drawing1.png">
-			<img id="drawing2" src="gfx/drawing2.png">
-			<img id="drawing3" src="gfx/drawing3.png">
+    <nav>
+		<div id="intro" class="info-block">
+			<p class="text-white heading">Games made with love</p>
+			<p class="text-white">Orange Dragon Studio is an indie game company created by Jackie & Kevin. We are currently working on our first title: Wayward Sail</p>
+			<img src="gfx/Logo.png">
 		</div>
-		
-		<footer>
-			<p>Designed by Jacqueline Tran<br>
-			Copyrighted, Orange Dragon Studio 2015</p>
-		</footer>
-    </div>
-    
-    <div id="JackiePage">
-    </div>
-    
-    <div id="KevinPage">
-    </div>
-    <!--<script src="js/scripts.js"></script>-->
+	</nav>
+
+	<div class="info-block">
+		<h1>Our Projects</h1>
+		<hr>
+		<ul class="proj-list">
+			<li onclick="showWayward()">
+				<p>Wayward Sail</p>
+				<img src="gfx/wayward.png">
+				<p class="mini-desc" id="wayward-mini-desc">An open world sailing ORPG with resource gathering and building</p>
+			</li>
+			<!--<li onclick="">
+				<p>Wandering Soul</p>
+				<img src="gfx/wander.png">
+				<p class="mini-desc" id="wayward-mini-desc">An open world sailing ORPG with resource gathering and building</p>
+			</li>-->
+
+		</ul>
+		<hr>
+
+		<div class="proj-desc" id="wayward">
+			<h1>Wayward Sail</h1>
+			<p align="justify">Wayward Sail is Work-in-progress ORPG developing by Jackie and Kevin. We currently do not have a planned release date.
+			The game is setted in the 1600s on the fictional land ocean world of Fyxentia where it is ruled by the Goddess Elaina. A long time ago,
+			mankind waged wars, destroying one another for fames and greeds. Angered by their actions, Elaina flooded the world, leaving only a few of 
+			her loyal subjects survived on a few small islands before disppearing into her heaven. Thousands of years had passed and mankind had learned
+			their mistakes, what was then rumbles are now big cities and ports across the land. Things seem to be going great for everyone, until recently. 
+			There has been a lot of earthquake, and it is rumored that far, far away, new islands appeared where there was water before. Will you, explorers
+			and heroes, take the leads and colonize places where no man has gone before?
+			 <br><br>
+			 <h3>Features planned: </h3>
+			 <ul>
+				 <li>
+					<h4>Open and expansive world</h4>
+					<p>We plan to make the world expand as the game progress. Outside of the default islands, new islands created (via a Goddess point system) will allow players to
+					harvest resources and build their own home and town (even city and kingdom!)</p>
+					<img src="gfx/world.png">
+				</li>
+
+				<li>
+					<h4>Resources gathering, crafting and building</h4>
+					<p>As mentioned, each island will have specific set of resources that can be gathered. Using different type of resources can improve certain aspect of an items or
+					just make it look cooler. There will be a trading system implemented, more on that below</p>
+					<img src="gfx/housing.png">
+				</li>
+
+				<li>
+					<h4>Sailing and trading system</h4>
+					<p>We plan to make a sailing system so that you can explore around or trade goods from islands to islands. There will be various type of ships each with different
+					advantages and disadvantages. Yes there will be sea combats along with land combats/grapphling as well</p>
+					<img src="gfx/ship.png">
+				</li>
+
+				<li>
+					<h4>Controllable NPC</h4>
+					<p>Because of the scope of the game, I think manually gathering all the resources or sail your ships from islands to islands would be a pain to do. So instead we
+					will create a controllable NPC system where you can hire NPC as your party member and order them to do labor tasks for you</p>
+					<img src="gfx/harvest.png">
+				</li>
+			</ul>
+		</div>
+		<div class="proj-desc" id="wander">
+
+		</div>
+	</div>
+
+	<footer>
+		<p>For any inquiry please contact Jacqueline at: <a href="mailto:jacqueline@ordrstudio.com">jacqueline@ordrstudio.com</a>
+		<p>Designed by Jacqueline T. Tran</p>
+		<p>Hosted on GitHub with GitHub Pages at <a href="https://github.com/Jacquelinett/jacquelinett.github.io">[Repository]</a></p>
+	</footer>
 </body>
 
 <script src="script.js"></script>
