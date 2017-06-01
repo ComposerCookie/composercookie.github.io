@@ -109,6 +109,11 @@ hr {
     transition: all 200ms linear;
 }
 
+.skill-list li:hover {
+    box-shadow: 5px 5px 10px #888888;
+    transform: translate(-2px, -4px);
+}
+
 .skill-list li p {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
@@ -161,6 +166,12 @@ hr {
     border: 1px solid rgb(225, 228, 232);
     padding: 2px;
     box-shadow: 3px 3px 10px #888888;
+    transition: all 200ms linear;
+}
+
+.pastProjects img:hover {
+    box-shadow: 5px 5px 10px #888888;
+    transform: translate(-2px, -4px);
 }
 
 .pastProjects span {
