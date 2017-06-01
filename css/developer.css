@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    text-align: center;
+    animation: fadein 2s;
+}
+
+.text-white {
+    color: white;
+}
+
+.info-block {
+    width: 100%;
+    margin: 0 auto;
+}
+
+nav {
+    width: 100%;
+    height: 800px;
+    text-align: center;
+    background-image: url("../gfx/kingdom.png");
+    background-size: auto;
+}
+
+#intro {
+    text-align: center;
+    font-size: 26px;
+    line-height: 39px;
+    margin: 0 auto;
+}
+
+#intro p {
+    float: left;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    max-width: 600px;
+    word-wrap: break-word;
+}
+
+#intro img {
+    margin-top: 300px;
+}
+
+#intro .heading {
+    font-size: 72px;
+    line-height: 72px;
+    max-width: 500px;
+    margin-top: 300px;
+    margin-bottom: 0px;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 54px;
+    line-height: 68px;
+    color: #24292e;
+    font-weight: normal;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    line-height: 33px;
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.profile-head ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.profile-head img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-top: -105px;
+    border: 3px solid white;
+    box-shadow: 1px 1px 10px #888888;
+}
+
+hr {
+    margin-top: 50px;
+}
+
+.info-block h3 {
+    margin-top: 60px;
+    margin-bottom: 35px;
+}
+
+.skill-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skill-list li {
+    width: 315px;
+    height: 150px;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    margin: 10px;
+    border: 1px solid rgb(225, 228, 232);
+    overflow: hidden;
+    box-shadow: 3px 3px 10px #888888;
+    transition: all 200ms linear;
+}
+
+.skill-list li p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    margin-left: 90px;
+}
+
+.skill-list li p.skill-head {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px;
+}
+
+.skill-list li img {
+    width: 80px;
+    height: 150px;
+    vertical-align: middle;
+    float: left;
+}
+
+footer {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 140px;
+    color: rgb(225, 228, 232);
+    background-color: #24292e;
+    padding: 15px;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@media (min-width: 1024px) {
+    .info-block {
+        width: 1024px;
+    }
+}
