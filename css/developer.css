@@ -130,6 +130,65 @@ hr {
     float: left;
 }
 
+.pastProjects {
+    text-align: left;
+    list-style-type: none;
+    padding: 0;
+}
+
+.pastProjects li {
+    margin-top: 50px;
+}
+
+.pastProjects p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.pastProjects p.proj-head {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 26px;
+    margin-top: 16px;
+}
+
+.pastProjects img {
+    width: 440px;
+    height: 248px;
+    display: inline-block;
+    border: 1px solid rgb(225, 228, 232);
+    padding: 2px;
+    box-shadow: 3px 3px 10px #888888;
+}
+
+.pastProjects span {
+    vertical-align: top;
+    width: 530px;
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.pastProjects span ul {
+    list-style-type: square;
+    margin-top: 14px;
+}
+
+.pastProjects span ul li{
+    margin-top: 4px;
+}
+
+.pastProjects .left img {
+    margin-left: 35px;
+}
+
+.pastProjects .right img {
+    margin-right: 35px;
+}
+
 footer {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
