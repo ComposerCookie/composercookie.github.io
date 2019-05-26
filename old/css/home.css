@@ -1,0 +1,503 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    background-color: #FFFFFF;
+    opacity: 0;
+    transition: opacity .500s ease-in-out;
+}
+
+#Logo{
+    background-image: url('../gfx/logoBackground.png');
+    background-color: #1E1E1F;
+    background-repeat: no-repeat;
+    background-size: 100% 540px;
+    height: 540px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    
+}
+
+#logo{
+    padding-top: 60px;
+    margin-bottom: -30px;
+}
+
+#Logo h1{
+    color: #F59764;
+    font-size: 42px;
+}
+
+#Logo h2{
+    color: #FFF8AD;
+    font-size: 18px;
+    margin-top: -24px;
+}
+
+nav{
+    background-image: url('../gfx/navImg.png');
+    background-position: center; 
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    position: relative;
+    top: -24px;
+    min-width: 777px;
+}
+
+nav ul{
+    margin: 0 auto;
+    display: block;
+    list-style-type: none;
+    padding-left:0;
+    width: 90%;
+    height: 59px;
+    min-width: 817px;
+}
+
+nav ul li{
+    margin: 0;
+    display: inline-block;
+    width: 192px;
+    height: 63px;
+    padding-left: 1px;
+    position: relative;
+    line-height: 59px;
+    font-size: 24px;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #8C8C8C;
+}
+
+nav ul li a:hover{
+    text-decoration: none;
+    color: #DDE336;
+}
+
+#Team{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+#Team h1{
+    font-size: 30px;
+}
+
+.personBox{
+    display: inline-block;
+    width: 600px;
+    margin-top: 90px;
+    vertical-align: top;
+}
+
+.personLine{
+    position: relative;
+    height: 390px;
+    width: 324px;
+    text-align: center;
+    display: inline-block;
+}
+
+.profileImage{
+    width: 324px;
+    transition: all 300ms ease-in;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+}
+
+#jackieLine:hover #profileLeft {
+    left: -54px;
+}
+
+#jackieLine:hover #jackieTrait {
+    left: 230px;
+}
+
+#kevinLine:hover #profileRight {
+    left: 52px;
+}
+
+#kevinLine:hover #kevinTrait {
+    left: -170px;
+}
+
+.traitList{
+    position: absolute;
+    left: 0px;
+    width: 324px;
+    transition: all 300ms ease-in-out;
+    margin-top: 0;
+}
+
+.traitList li{
+    border-top: 1px solid #1E1E1F;
+    border-bottom: 1px solid #1E1E1F;
+    height: 76px;
+    width: 180px;
+    list-style-type: none;
+    color: #1E1E1F;
+    vertical-align: middle;
+    line-height: 40px;
+    padding
+}
+
+.nameBanner{
+    position: relative;
+}
+
+.personText{
+    margin: auto;
+    margin-top: 16px;
+    width: 420px;
+    font-size: 14px;
+    text-align: justify;
+    background-color: rgba(255, 255, 255, .85);
+}
+
+#Projects{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.prjheader{
+    
+}
+
+.projectFilter {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    width: 65%;
+}
+
+.projectFilter input{
+    margin-left: 40px;
+    margin-right: 4px;
+}
+
+.projectList{
+    margin-top: 28px;
+    width: 100%;
+    background-color: #1A1A1A;
+    height: 480px;
+}
+
+.gallery{
+    display: inline-block;
+    width: 1060px;
+    height: 420px;
+    vertical-align: top;
+}
+
+.gallery h2{
+    color: #FFFFFF;
+    font-size: 38px;
+}
+
+.prjImgList{
+    width: 320px;
+    height: 258px;
+    position: relative;
+    margin: auto;
+    margin-top: 60px;
+    
+}
+
+.projectToLeft{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 80px 40px 80px 0;
+    border-color: transparent #999999 transparent transparent;
+    display: inline-block;
+    background-color: #1A1A1A;
+    position: absolute;
+    left: -386px;
+    top: 70px;
+    transition: all 150ms ease-in-out;
+}
+
+.projectToRight{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 80px 0 80px 40px;
+    border-color: transparent transparent transparent #999999;
+    display: inline-block;
+    background-color: #1A1A1A;
+    position: absolute;
+    left: 654px;
+    top: 70px;
+    transition: all 150ms ease-in-out;
+}
+
+.projectToLeft:hover{
+    left: -394px;
+    border-color: transparent #c7c7c7 transparent transparent;
+    background-color: #5C5C5C;
+}
+
+.projectToRight:hover{
+    left: 662px;
+    border-color: transparent transparent transparent #c7c7c7;
+    background-color: #5C5C5C;    
+}
+
+.prjImageBox{
+    transition: all 240ms ease-in-out;
+	border: none;
+    width: 320px;
+    height: 258px;
+}
+
+.prjImageBox:hover{
+    border-color: #949494;
+    box-shadow: 0em 0em 1.5em lightgray;
+}
+
+.prjEndLeft{
+    transform: scale(.4);
+    z-index: 0;
+    top: 30px;
+    left: -420px;
+    position: absolute;
+}
+
+.prjEndLeft:hover{
+    transform: scale(.4);
+    z-index: 5;
+    top: 25px;
+}
+
+.prjMidEndLeft{
+    transform: scale(.6);
+    z-index: 1;
+    top: 20px;
+    left: -340px;
+    position: absolute;
+}
+
+.prjMidEndLeft:hover{
+    transform: scale(.6);
+    z-index: 5;
+    top: 15px;
+}
+
+.prjMidLeft{
+    transform: scale(.8);
+    z-index: 2;
+    top: 10px;
+    left: -220px;
+    position: absolute;
+}
+
+.prjMidLeft:hover{
+    transform: scale(.8);
+    z-index: 5;
+    top: 5px;
+}
+
+.prjCenter{
+    z-index: 3;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+}
+
+.prjCenter:hover{
+    z-index: 5;
+    top: -5px;
+}
+
+.prjMidRight{
+    transform: scale(.8);
+    z-index: 2;
+    top: 10px;
+    left: 220px;
+    position: absolute;
+}
+
+.prjMidRight:hover{
+    transform: scale(.8);
+    z-index: 5;
+    top: 5px;
+}
+
+.prjMidEndRight{
+    transform: scale(.6);
+    z-index: 1;
+    top: 20px;
+    left: 340px;
+    position: absolute;
+}
+
+.prjMidEndRight:hover{
+    transform: scale(.6);
+    z-index: 5;
+    top: 15px;
+}
+
+.prjEndRight{
+    transform: scale(.4);
+    z-index: 0;
+    top: 30px;
+    left: 420px;
+    position: absolute;
+}
+
+.prjEndRight:hover{
+    transform: scale(.4);
+    z-index: 5;
+    top: 25px;
+}
+
+#project1Img{
+	background-image: url('../gfx/nbnchatn.png');
+}
+
+#project2Img{
+	background-image: url('../gfx/pleshiebut.png');
+}
+
+#project3Img{
+	background-image: url('../gfx/heckerNfoods.png');
+}
+
+#project4Img{
+	background-image: url('../gfx/waywardsoul.png');
+}
+
+#project5Img{
+	background-image: url('../gfx/smiteTeemo.png');
+}
+
+#project6Img{
+	background-image: url('../gfx/adobeCard.png');
+}
+
+#project7Img{
+	background-image: url('../gfx/rpgmerker.png');
+}
+
+.projectDesBox{
+    display: inline-block;
+    width: 360px;
+    height: 420px;
+    vertical-align: top;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.projectDesBox h2{
+    margin-top: 28px;
+    margin-bottom: 0px;
+    font-size: 32px;
+    color: #FFFFFF;
+}
+
+.projectDesBox h3{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+#projectSub{
+    margin-bottom: 15px;
+}
+
+#projectPlatform{
+    margin-top: 15px;
+}
+
+#projectLink{
+    float: right;
+    padding-right: 20px;
+    padding-top: 30px;
+}
+
+#devStatus{
+    color: red;
+}
+
+.projectDesBox p{
+    margin-top: 30px;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+#Interested{
+    text-align: center;
+    margin-top: 80px;
+}
+
+.contactBox{
+    padding-top: 40px;
+    background-color: rgba(255, 255, 255, .85);
+}
+
+#Drawings{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#drawing1{
+    position: absolute;
+    top: 1200px;
+    left: 0px;
+    z-index: -1;
+}
+
+#drawing2{
+    position: absolute;
+    top: 600px;
+    right: 100px;
+    z-index: -1;
+}
+
+#drawing3{
+    position: absolute;
+    top: 2150px;
+    right: 0px;
+    z-index: -1;
+}
+
+footer{
+    margin-top: 80px;
+    background-color: #1E1E1F;
+    text-align: center;
+    height: 80px;
+    padding-top: 2px;
+}
+
+footer p{
+    color: #FFFFFF;
+}
+
+@media (max-width: 1460px) {    
+    .projectList {
+        height: 920px;
+    }
+    
+    #drawing1 {
+        left: -40px;
+    }
+    
+    #drawing2 {
+        right: 0px;
+    }
+    
+    #drawing3 {
+        right: 0px;
+        top: 2500px;
+    }
+}
