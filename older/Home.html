@@ -9,14 +9,14 @@
 
 </head>
 
-<header>
+<nav>
 	<div class="NavigationBar">
 			
 		<img id="HomeButton" src="Heading.png" alt="Navigation Image" height="450" width="1200">
 			
 		<div class = "HomeButton">
 			
-			<a href="Home.php"> 
+			<a href="Home.html"> 
 				<img src="Home Button.png" alt="Home Button" width="125" height="50" border="0">
 			</a>
 			
@@ -55,7 +55,7 @@
 
 	</div>
 		
-</header>
+</nav>
 
 
 <body>	
@@ -109,29 +109,5 @@
 	</div>	
 	
 </body>
-
-	<footer>
-		Jackie
-		
-		<?php
-			$con=mysqli_connect("localhost","root","","jackie");
-
-			// Check connection
-			if (mysqli_connect_errno($con))
-			{
-				echo "Failed to connect to MySQL: " . mysqli_connect_error();
-			}
-			
-			$visit = mysqli_query($con,"SELECT visit_count FROM total_visit");
-			mysqli_query($con,"UPDATE `jackie`.`total_visit` SET visit_count = visit_count + 1");
-			
-			while($row = mysqli_fetch_array($visit))
-			{
-				echo $row['visit_count'];
-			}
-		?>
-	
-
-	</footer>
 
 </html>
