@@ -1,0 +1,169 @@
+container{
+			position:relative;
+			width:1200px;
+			margin:0 auto;
+			background-color:transparent;
+}
+
+.MainBox{
+	width:1200px;
+	height:2000px;
+	margin: 0 auto;
+	position:relative;
+	background-image:url('Base Color.png');
+	background-repeat: no-repeat;
+}
+
+.PostBox{
+	width:1000px;
+	height:500px;
+	margin: 0 auto;
+	position:absolute;
+	top: 25px;
+	left: 25px;
+}
+
+.ProjectBar{
+	width:600px;
+	height:35px;
+	margin: 0 auto;
+	position:absolute;
+	top: 800px;
+	left: 300px;
+}
+
+.ProjectBox1{
+	width: 269px;
+	height: 400px;
+	margin: 0 auto;
+	position:absolute;
+	top: 860px;
+	left: 50px;
+}
+
+.ProjectBox2{
+	width: 269px;
+	height: 400px;
+	margin: 0 auto;
+	position:absolute;
+	top: 860px;
+	left: 327px;
+}
+
+.ProjectBox3{
+	width: 269px;
+	height: 400px;
+	margin: 0 auto;
+	position:absolute;
+	top: 860px;
+	left: 604px;
+}
+
+.ProjectBox4{
+	width: 269px;
+	height: 400px;
+	margin: 0 auto;
+	position:absolute;
+	top: 860px;
+	left: 881px;
+}
+
+.NewsBanner{
+	width: 100px;
+	height: 30px;
+	margin: 0 auto;
+	position:absolute;
+	top: 25px;
+	left:-40px;
+}
+
+.ProjectsBanner{
+	width: 100px;
+	height: 30px;
+	margin: 0 auto;
+	position:absolute;
+	top: 775px;
+	left:-40px;
+}
+
+.AdvertiseBox{
+	width:1100px;
+	height:400px;
+	margin: 0 auto;
+	position:absolute;
+	top: 75px;
+	left: 50px;
+}
+
+.SmallBox1{
+	width:330px;
+	height:250px;
+	margin: 0 auto;
+	position:absolute;
+	top: 500px;
+	left: 50px;
+}
+
+.SmallBox2{
+	width:330px;
+	height:250px;
+	margin: 0 auto;
+	position:absolute;
+	top: 500px;
+	left: 435px;
+}
+
+.SmallBox3{
+	width:330px;
+	height:250px;
+	margin: 0 auto;
+	position:absolute;
+	top: 500px;
+	left: 820px;
+}
+
+.NavigationBar{
+    width:1200px;
+    margin: 0 auto;
+	background-color:transparent;
+	position: relative;
+}
+
+.HomeButton
+{
+position: absolute;
+left: 166px;
+top: 339px;
+}
+
+.BlogButton
+{
+position: absolute;
+left: 299px;
+top: 339px;
+}
+
+.ProjectsButton
+{
+position: absolute;
+left: 432px;
+top: 339px;
+}
+
+.AboutMeButton
+{
+position: absolute;
+left: 565px;
+top: 339px;
+}
+
+.ContactButton
+{
+position: absolute;
+left: 698px;
+top: 339px;
+}
+
+footer{
+position: relative;
+}
